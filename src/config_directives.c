@@ -475,7 +475,7 @@ CFGFUN(focus_follows_mouse, const char *value) {
 }
 
 CFGFUN(tiling_drag, const char *value) {
-    config.disable_tiling_drag = !eval_boolstr(value);
+    config.disable_tiling_drag = !boolstr(value);
 }
 
 CFGFUN(mouse_warping, const char *value) {
